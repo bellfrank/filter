@@ -1,0 +1,5 @@
+Flask
+requests
+
+# brew install imagemagick
+# pip3 install opencv-python

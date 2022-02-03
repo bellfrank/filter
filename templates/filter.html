@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    
+{% endblock %}
+
+{% block main %}
+<div class="row">
+
+    <div>
+        <img id="output" name="img" alt="Display Picture" src="{{url_for('static', filename ='uploads/brainsonline.bmp')}}" style="width: 300px"/>
+        <figcaption>Fig.1 - Original Version</figcaption>
+    </div>
+
+    <div class="column">
+        <img id="output" name="img" alt="Display Picture" src="{{url_for('static', filename ='uploads/blur.bmp')}}" style="width: 300px"/>
+        <figcaption>Fig.2 - Blur</figcaption>
+    </div>
+
+    <div class ="column">
+        <img id="output" name="img" alt="Display Picture" src="{{url_for('static', filename ='uploads/edges.bmp')}}" style="width: 300px"/>
+        <figcaption>Fig.3 - Edges</figcaption>
+    </div>
+
+    <div class ="column">
+        <img id="output" name="img" alt="Display Picture" src="{{url_for('static', filename ='uploads/reflect.bmp')}}" style="width: 300px"/>
+        <figcaption>Fig.4 - Reflected</figcaption>
+    </div>
+
+    <div class="column">
+        <img id="output" name="img" alt="Display Picture" src="{{url_for('static', filename ='uploads/gray.bmp')}}" style="width: 300px"/>
+        <figcaption>Fig.5 - Gray</figcaption>
+    </div>
+    
+</div>
+
+{% endblock %}

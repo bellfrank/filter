@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    
+{% endblock %}
+
+{% block main %}
+<form method="post" enctype="multipart/form-data" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <div class="drop-zone">
+    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+    <input type="file" id="image_input" name="file" class="drop-zone__input">
+  </div>
+  <p></p>
+  <button class="btn btn-primary" type="submit"> SUBMIT </button>
+</form>
+
+<script src="static/script.js"></script>
+
+<img id="drag1" src="{{url_for('static', filename='uploads/disney.jpeg')}}" draggable="true" ondragstart="drag(event)" width="200" height="200" alt="Disney Image">
+<!-- <img id="drag1" src="{{url_for('static', filename='uploads/disney.jpeg')}}" draggable="true" ondragstart="drag(event)" width="200" height="200" alt="Disney Image"> -->
+<img id ="drag2" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Geek_logi_-low_res.png" draggable="true" ondragstart="drag(event)" width="200" height="200" alt="Disney Image">
+
+
+{% endblock %}
+
+<!-- 
+<form method="post" enctype="multipart/form-data">
+  <div id="display_image"></div>
+  <input type="file" id="image_input" name="file" accept="image/png, image/jpg, .bmp">
+  <button class="btn btn-primary" type="submit">Submit</button> -->
+
+  <!-- fetches upload script -->
+  <!-- <script src="{{url_for('static', filename='script.js')}}"></script>
+</form>
+<img src="{{url_for('static', filename='uploads/disney.jpeg')}}" alt="Disney Image"  draggable="true" width="200" height="300">
+ -->
