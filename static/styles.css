@@ -26,30 +26,6 @@ body{
     background-color: whitesmoke;
 }
 
-
-/* #display_image{
-width: 400px;
-height: 300px;
-border: 1px solid black;
-margin-left: auto;
-margin-right: auto;
-background-size: cover;
-} */
-
-
-/* addding drag and drop elements */
-/* #div1 {
-  width: 400px;
-  height: 300px;
-  padding: 10px;
-  border: 1px solid #aaaaaa;
-}
-
-#drag1 {
-  width: 400px;
-  height: 300px;
-} */
-
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
@@ -119,14 +95,4 @@ background-size: cover;
   text-align: center;
 }
 
-/* 
-Old implementation */
-/* #display_image{
-  width: 400px;
-  height: 300px; */
-  /* border: 1px solid black; */
-  /* margin-left: auto;
-  margin-right: auto;
-  background-size: cover;
-  } */
   
