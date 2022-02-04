@@ -1,5 +1,8 @@
 Flask
 requests
+gunicorn
+psycopg2
+opencv-python-headless
 
 # brew install imagemagick
 # pip3 install opencv-python
